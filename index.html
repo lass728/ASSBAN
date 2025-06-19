@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulado ASSBAN</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .question {
+      margin-bottom: 1.5rem;
+    }
+
+    .question p {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin: 0.3rem 0;
+      cursor: pointer;
+      padding: 0.3rem;
+      border-radius: 5px;
+      transition: background 0.2s ease;
+    }
+
+    input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    .correct {
+      background-color: #d4edda;
+      border: 1px solid #28a745;
+    }
+
+    .incorrect {
+      background-color: #f8d7da;
+      border: 1px solid #dc3545;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    button {
+      padding: 0.8rem 1.2rem;
+      margin: 0 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .check-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .reset-btn {
+      background-color: #6c757d;
+      color: white;
+    }
+
+    .result {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+
+      button {
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Simulado ASSBAN</h1>
+
+    <form id="quizForm">
+      <div class="question" data-answer="c">
+        <p>1. Margareth aplicou R$ 5.000 em uma modalidade de investimento com juros simples. Após certo tempo, o rendimento total foi de 20% sobre o valor inicialmente aplicado. Qual foi o lucro obtido por Margareth ao final desse período?</p>
+        <label><input type="radio" name="q1" value="a"> R$ 200</label>
+        <label><input type="radio" name="q1" value="b"> R$ 500</label>
+        <label><input type="radio" name="q1" value="c"> R$ 1.000</label>
+        <label><input type="radio" name="q1" value="d"> R$ 1.200</label>
+      </div>
+
+      <div class="question" data-answer="c">
+        <p>2. A quebra de sigilo bancário somente pode ser requerida mediante:</p>
+        <label><input type="radio" name="q2" value="a"> Pedido de representante legal da instituição financeira que concedeu o crédito.</label>
+        <label><input type="radio" name="q2" value="b"> Pedido do agente de crédito.</label>
+        <label><input type="radio" name="q2" value="c"> Pedido da competente autoridade judiciária.</label>
+        <label><input type="radio" name="q2" value="d"> Pedido de membro da família do cliente.</label>
+      </div>
+
+      <div class="question" data-answer="a">
+        <p>3. Quem estabelece regras para o bom funcionamento do sistema financeiro nacional e é seu órgão máximo.    </p>
+        <label><input type="radio" name="q3" value="a"> CMN - Conselho Monetário Nacional.</label>
+        <label><input type="radio" name="q3" value="b"> BACEN - Banco Central do Brasil.</label>
+        <label><input type="radio" name="q3" value="c"> CVM - Comissão de Valores Mobiliários.</label>
+        <label><input type="radio" name="q3" value="d"> SUSEP - Superintendência de Seguros.</label>
+      </div>
+
+      <div class="question" data-answer="c">
+        <p>4. Fiscaliza os bancos:   </p>
+        <label><input type="radio" name="q4" value="a"> CMV - Comissão de Valores Mobiliários.</label>
+        <label><input type="radio" name="q4" value="b"> CEF - Caixa Econômica Federal.</label>
+        <label><input type="radio" name="q4" value="c"> BACEN - Banco Central do Brasil.</label>
+        <label><input type="radio" name="q4" value="d"> CMN - Conselho monetário Nacional.</label>
+      </div>
+
+      <div class="question" data-answer="a">
+        <p>5. Sobre o CET (Custo Efetivo Total) é INCORRETO afirmar:</p>
+        <label><input type="radio" name="q5" value="a"> O CET deve ser informado após a contratação de operações.</label>
+        <label><input type="radio" name="q5" value="b"> O CET representa o custo total de uma operação de empréstimo ou financiamento.</label>
+        <label><input type="radio" name="q5" value="c"> O CET deve ser informado ao cliente pela instituição financeira.</label>
+        <label><input type="radio" name="q5" value="d"> O CET deve constar dos informes publicitários das instituições quando forem veiculadas ofertas específicas.</label>
+      </div>
+
+      <div class="question" data-answer="d">
+        <p>6. Sobre as taxas de juros, assinale a alternativa:</p>
+        <label><input type="radio" name="q6" value="a"> A taxa de juros nominal é sempre maior que a taxa de juros real.</label>
+        <label><input type="radio" name="q6" value="b"> A taxa de inflação é igual à taxa nominal de uma operação.</label>
+        <label><input type="radio" name="q6" value="c"> A taxa de juros real no Brasil é representada pela Selic.</label>
+        <label><input type="radio" name="q6" value="d"> A taxa de juros real é a Selic menos a inflação.</label>
+      </div>
+
+      <div class="question" data-answer="b">
+        <p>7. Um cliente tem um imóvel cujo valor de mercado é de R$50 mil. Decidiu vendê-lo para solucionar problemas financeiros. A única proposta de compra que recebeu foi de R$ 30 mil. O risco determinante deste investimento foi o de:</p>
+        <label><input type="radio" name="q7" value="a"> Crédito.</label>
+        <label><input type="radio" name="q7" value="b"> Liquidez.</label>
+        <label><input type="radio" name="q7" value="c"> Operacional.</label>
+        <label><input type="radio" name="q7" value="d"> Reputação.</label>
+      </div>
+
+      <div class="question" data-answer="c">
+        <p>8. Alfredo é proprietário de um restaurante e pretende tomar um empréstimo para compra de um veículo. Caso Alfredo não efetue o pagamento do empréstimo, qual o tipo de risco que o banco está correndo?  </p>
+        <label><input type="radio" name="q8" value="a"> Risco de mercado.</label>
+        <label><input type="radio" name="q8" value="b"> Risco operacional.</label>
+        <label><input type="radio" name="q8" value="c"> Risco de crédito.</label>
+        <label><input type="radio" name="q8" value="d"> Risco de liquidez.</label>
+      </div>
+
+      <div class="question" data-answer="d">
+        <p>9. Juros adicionados ao principal no fim de cada período, formando montante que será tomado como principal para período seguinte:  </p>
+        <label><input type="radio" name="q9" value="a"> Capitalização Efetiva.</label>
+        <label><input type="radio" name="q9" value="b"> Capitalização Nominal.</label>
+        <label><input type="radio" name="q9" value="c"> Capitalização Simples.</label>
+        <label><input type="radio" name="q9" value="d"> Capitalização Composta.</label>
+      </div>
+
+      <div class="question" data-answer="d">
+        <p>10. Um cliente comenta que vai precisar vender urgente uma casa para liquidar dívidas. Você fala com um corretor amigo, comentando inclusive a precária financeira do seu cliente. Você agiu contrariamente ao princípio ético:</p>
+        <label><input type="radio" name="q10" value="a"> Do Profissionalismo;</label>
+        <label><input type="radio" name="q10" value="b"> Da Competência;</label>
+        <label><input type="radio" name="q10" value="c"> Da Integridade;</label>
+        <label><input type="radio" name="q10" value="d"> Da Confidencialidade;</label>
+      </div>
+
+      <div class="question" data-answer="b">
+        <p>11. Entidade fiscalizada pela Comissão de Valores Mobiliários:</p>
+        <label><input type="radio" name="q11" value="a"> Seguradoras;</label>
+        <label><input type="radio" name="q11" value="b"> Bolsa de Valores;</label>
+        <label><input type="radio" name="q11" value="c"> Banco Comercial;</label>
+        <label><input type="radio" name="q11" value="d"> Entidade de Previdência Fechada</label>
+      </div>
+
+      <div class="question" data-answer="b">
+        <p>12. O prazo previsto para resposta final ao cliente que fizer reclamação à ouvidoria dos bancos é de:</p>
+        <label><input type="radio" name="q12" value="a"> 30 dias a contar da data do protocolo da reclamação.</label>
+        <label><input type="radio" name="q12" value="b"> 15 dias a contar da data do protocolo da reclamação.</label>
+        <label><input type="radio" name="q12" value="c"> 15 dias a contar da data da falha em serviço que deu causa a reclamação.</label>
+        <label><input type="radio" name="q12" value="d"> 30 dias a contar da data da falha em serviço que deu causa a reclamação.</label>
+      </div>
+
+      <div class="question" data-answer="a">
+        <p>13. Quando efetuamos um parcelamento em que os juros são calculados sobre o valor total e dividido durante o período do contrato, exemplo, contratei um valor de R$100 para pagar em 20 parcelas com juros a 2%. O Juros seria de 40% sobre o valor total, sendo R$140,00 de valor de contrato com os juros, o eu me daria uma parcela de R$7,00 por mês. Como é chamado este tipo de cálculo de juros?</p>
+        <label><input type="radio" name="q13" value="a"> Juros Simples.</label>
+        <label><input type="radio" name="q13" value="b"> Juros Compostos.</label>
+        <label><input type="radio" name="q13" value="c"> Juros ao portador.</label>
+        <label><input type="radio" name="q13" value="d"> Juros bancário.</label>
+      </div>
+
+      <div class="question" data-answer="d">
+        <p>14. São encargos e despesas que compõe o cálculo da CET, EXCETO:        </p>
+        <label><input type="radio" name="q14" value="a"> Taxa de juros.</label>
+        <label><input type="radio" name="q14" value="b"> Seguros.</label>
+        <label><input type="radio" name="q14" value="c"> Tributos.</label>
+        <label><input type="radio" name="q14" value="d"> Gratificações.</label>
+      </div>
+
+      <div class="question" data-answer="d">
+        <p>15. É componente a ser examinado sob a ótica da gestão de risco operacional:    </p>
+        <label><input type="radio" name="q15" value="a"> Não pagamento de um empréstimo pelo cliente.</label>
+        <label><input type="radio" name="q15" value="b"> O cliente atrasou a prestação do empréstimo.</label>
+        <label><input type="radio" name="q15" value="c"> Os terminais de autoatendimento não funcionam.</label>
+        <label><input type="radio" name="q15" value="d"> O valor do real se desvalorizou em relação do dólar.</label>
+      </div>
+
+      <div class="question" data-answer="d">
+        <p>16. Estabelecimentos que podem integrar a rede de correspondentes no país de um banco comercial.</p>
+        <label><input type="radio" name="q16" value="a"> Supermercados.</label>
+        <label><input type="radio" name="q16" value="b"> Farmácias.</label>
+        <label><input type="radio" name="q16" value="c"> Lojas de conveniências.</label>
+        <label><input type="radio" name="q16" value="d"> Todas as alternativas anteriores.</label>
+      </div>
+
+      <div class="question" data-answer="b">
+        <p>17. Toda propaganda ______________ é proibida. Complete a frase com a opção correta: </p>
+        <label><input type="radio" name="q17" value="a"> Criativa ou ampla.</label>
+        <label><input type="radio" name="q17" value="b"> Enganosa ou abusiva.</label>
+        <label><input type="radio" name="q17" value="c"> Esclarecedora e produtiva.</label>
+        <label><input type="radio" name="q17" value="d"> Abrangente e específica.</label>
+      </div>
+
+      <div class="question" data-answer="b">
+        <p>18. João investiu R$ 3.600 em uma aplicação de juros simples, com taxa de 2,5% ao mês. Após 8 meses, qual será o valor total dos juros obtidos por João?</p>
+        <label><input type="radio" name="q18" value="a"> R$ 600</label>
+        <label><input type="radio" name="q18" value="b"> R$ 720</label>
+        <label><input type="radio" name="q18" value="c"> R$ 840</label>
+        <label><input type="radio" name="q18" value="d"> R$ 960</label>
+      </div>
+
+      <div class="question" data-answer="a">
+        <p>19. É um canal de comunicação para mediação de conflitos entre clientes e a instituição financeira, cuja implantação foi determinada pelo BACEN:</p>
+        <label><input type="radio" name="q19" value="a"> Ouvidoria.</label>
+        <label><input type="radio" name="q19" value="b"> Controladoria.</label>
+        <label><input type="radio" name="q19" value="c"> Internet Banking.</label>
+        <label><input type="radio" name="q19" value="d"> Auditoria.</label>
+      </div>
+
+      <div class="question" data-answer="c">
+        <p>20. A atitude abaixo descrita caracteriza que etapa do crime de "Lavagem de Dinheiro" Uma pessoa sabidamente envolvida com atividades de compra e venda de narcóticos, troca em uma casa de câmbio as notas de baixo valor que recebeu, fruto de sua atividade ilícita, por dólares.</p>
+        <label><input type="radio" name="q20" value="a"> Dissimulação.</label>
+        <label><input type="radio" name="q20" value="b"> Integração.</label>
+        <label><input type="radio" name="q20" value="c"> Ocultação.</label>
+        <label><input type="radio" name="q20" value="d"> Colocação.</label>
+      </div>
+
+      <div class="question" data-answer="d">
+        <p>21. No regime de capitalização simples, a taxa de juros mensal é:   </p>
+        <label><input type="radio" name="q21" value="a"> Igual a doze vezes a taxa mensal.</label>
+        <label><input type="radio" name="q21" value="b"> Igual à taxa mensal dividida por doze.</label>
+        <label><input type="radio" name="q21" value="c"> Igual a taxa mensal, mais um, elevada a doze.</label>
+        <label><input type="radio" name="q21" value="d"> Igual à média simples das doze taxas mensais observadas no período.</label>
+      </div>
+
+      <div class="question" data-answer="d">
+        <p>22. Instituição auxiliar do sistema financeiro nacional, que opera no mercado de capitais com títulos e valores mobiliários, em especial no mercado de ações. Efetua intermediações entre os investidores nas transações em bolsa de valores:   </p>
+        <label><input type="radio" name="q22" value="a"> Sociedade de capitalização.</label>
+        <label><input type="radio" name="q22" value="b"> Sociedade de crédito, financiamento e de investimento.</label>
+        <label><input type="radio" name="q22" value="c"> Sociedade de crédito imobiliário.</label>
+        <label><input type="radio" name="q22" value="d"> Sociedade corretora de títulos e valores mobiliários.</label>
+      </div>
+
+
+      <div class="question" data-answer="a">
+        <p>23. Para o deferimento de empréstimo ou financiamento, cada banco: </p>
+        <label><input type="radio" name="q23" value="a"> Poderá estabelecer critérios próprios para a concessão de tais operações;</label>
+        <label><input type="radio" name="q23" value="b"> Deve considerar as instruções emitidas pela comissão de valores mobiliários;</label>
+        <label><input type="radio" name="q23" value="c"> Não necessita efetuar a gestão de risco;</label>
+        <label><input type="radio" name="q23" value="d"> Está proibido de exigir a apresentação de garantias;</label>
+      </div>
+
+      <div class="question" data-answer="a">
+        <p>24. É considerada vantagem exagerada aquela que:              </p>
+        <label><input type="radio" name="q24" value="a"> Restringem direitos e obrigações fundamentais inerentes a natureza do contrato;</label>
+        <label><input type="radio" name="q24" value="b"> Respeita os princípios fundamentais do sistema jurídico;</label>
+        <label><input type="radio" name="q24" value="c"> Protege o consumidor quanto as exigências que se mostram excessivamente onerosas;</label>
+        <label><input type="radio" name="q24" value="d"> Preserva os interesses das partes;</label>
+      </div>
+
+      <div class="question" data-answer="b">
+        <p>25. Um cliente contratou um empréstimo de R$ 10.000, com taxa de juros simples de 1,8% ao mês, por um prazo total de 10 meses. No entanto, ele decide quitar a dívida antecipadamente no 8º mês. Considerando apenas os juros devidos até a quitação, qual será o valor total pago em juros?</p>
+        <label><input type="radio" name="q25" value="a"> R$ 1.080</label>
+        <label><input type="radio" name="q25" value="b"> R$ 1.440</label>
+        <label><input type="radio" name="q25" value="c"> R$ 1.600</label>
+        <label><input type="radio" name="q25" value="d"> R$ 2.000</label>
+      </div>
+
+
+    </form>
+
+    <div class="buttons">
+      <button class="check-btn" onclick="corrigir()">Corrigir</button>
+      <button class="reset-btn" onclick="reiniciar()">Reiniciar</button>
+    </div>
+
+    <div id="resultado" class="result"></div>
+  </div>
+
+  <script>
+    function corrigir() {
+      const form = document.getElementById('quizForm');
+      const questions = form.querySelectorAll('.question');
+      let pontos = 0;
+
+      questions.forEach(q => {
+        const correta = q.dataset.answer;
+        const radios = q.querySelectorAll('input[type="radio"]');
+        radios.forEach(radio => {
+          const label = radio.parentElement;
+          label.classList.remove('correct', 'incorrect');
+          if (radio.checked) {
+            if (radio.value === correta) {
+              label.classList.add('correct');
+              pontos++;
+            } else {
+              label.classList.add('incorrect');
+            }
+          } else {
+            if (radio.value === correta) {
+              label.classList.add('correct');
+            }
+          }
+        });
+      });
+
+      document.getElementById('resultado').textContent = `Você acertou ${pontos} de ${questions.length} questões.`;
+    }
+
+    function reiniciar() {
+      const form = document.getElementById('quizForm');
+      form.reset();
+      const labels = form.querySelectorAll('label');
+      labels.forEach(label => label.classList.remove('correct', 'incorrect'));
+      document.getElementById('resultado').textContent = '';
+    }
+  </script>
+</body>
+</html>
